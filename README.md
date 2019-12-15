@@ -37,8 +37,12 @@ xrandr --output HDMI-1-1 --mode 1280x1024_60.00 --left-of eDP-1-1
 ## Start VNC Server
 
 We are using [x11vnc](https://linux.die.net/man/1/x11vnc) in our case.
-Pass ModeName followed by offset and flag -clip to x11vnc.
+Install it by using
 
+```bash
+sudo apt install x11vnc
+```
+Pass ModeName followed by offset and flag -clip to x11vnc.
 ```bash
 x11vnc -clip 1280x1024+0+0
 ```
